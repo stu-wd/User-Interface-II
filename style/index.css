@@ -146,20 +146,32 @@ header {
   border: 3px solid red;
   margin-top: 1%;
   text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.socials i {
+  border: 1px springgreen solid;
+  margin: 0 5px;
 }
 
 header h1 {
   font-size: 6rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
+  margin-bottom: 1%;
+  font-family: "PT Sans Narrow", sans-serif;
+  letter-spacing: 0.4rem;
 }
 
 header h3 {
   text-transform: uppercase;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
   font-size: 2rem;
-  /* border: 1px solid lime; */
+  border: 1px solid lime;
   padding: 1%;
 }
 
@@ -172,12 +184,16 @@ nav {
 }
 
 nav a {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   text-decoration: none;
   text-transform: lowercase;
   padding: 10px;
-  border: 1px solid black;
   margin: 1% 0;
+  font-family: "Poiret One", cursive;
+  /* font-weight: bold; */
+  background-color: black;
+  color: white;
+  letter-spacing: 1px;
 }
 
 /* Welcome Section */
@@ -186,6 +202,9 @@ nav a {
   text-align: center;
   font-size: 1.8rem;
   margin: 1% 0;
+  padding: 1% 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 3.4rem;
 }
 
 /* About Section */
@@ -197,12 +216,48 @@ nav a {
   width: 60%;
   margin: 0 20%;
   margin-bottom: 1%;
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 
 .personal div {
   padding: 2%;
   font-size: 1.3rem;
   border: 1px solid black;
+}
+
+.personal h5 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 1.6rem;
+}
+
+.goals ul li {
+  padding: 3% 1%;
+  margin: 1% 0;
+  letter-spacing: 1px;
+}
+
+.about h6 {
+  padding: 2% 0;
+  letter-spacing: 1px;
+}
+
+.about h6:nth-child(3) {
+  text-align: right;
+}
+
+.about h6:nth-child(4) {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.quote h6 {
+  line-height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  /* Want to add story book lettering */
 }
 
 /* Image */
@@ -223,4 +278,10 @@ nav a {
   margin: 1% 20%;
   text-align: center;
   text-transform: uppercase;
+}
+
+/* Footer */
+footer {
+  background-color: #f1f1f1;
+  padding: 1% 0;
 }
