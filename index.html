@@ -9,6 +9,7 @@
     <title>Stu Darsey</title>
 </head>
 <body>
+    <div class="background_container"> <!-- Background Container-->
 
     <div class="container"> <!-- Container -->
 
@@ -23,7 +24,6 @@
         <h1>Stuart Darsey</h1>
             <h3>"Never met a stranger" | Web Stuff</h3>
         </div>
-
     </header>
 
     <!-- Nav Bar -->
@@ -41,29 +41,50 @@
 
     <!-- About Section -->
     <section class="personal">
-        <div class="goals">
-            <h5>Goals</h5>
-                <ul>
-                    <li>Work from home</li>
-                    <li>Land job with current company</li>
-                    <li>Double my current salary</li>
-                    <li>Land interview with "dream company"</li>
-                    <li>See Phish in Mexico</li>
-                    <li>Move back to ski town</li>
-                </ul>
-            </h6>
+
+        <div class="showcase">
+            <div class="goals">
+                <h5>Goals</h5>
+                    <ul>
+                        <li>Work from home</li>
+                        <li>Land job with current company</li>
+                        <li>Double my current salary</li>
+                        <li>Land interview with "dream company"</li>
+                        <li>See Phish in Mexico</li>
+                        <li>Move back to ski town</li>
+                    </ul>
+                </h6>
+            </div>
+            <div class="bio">
+                <h5>Bio</h5>
+                <h6>It all started back in 1997 at a summer camp where I coded my first HTML & CSS website. 
+                <h6>From there, I did absolutely nothing with web development or computer programming until December 2020...when I decided to go to Lambda School. </h6>
+                <h6>I guess you could say I've been training for this moment. </h6>
+            </div>
+            <div class="quote">
+                <h5>Quote</h5>
+                <h6>When you get there, remember where you came from.</h6>
+            </div>
         </div>
-        <div class="about">
-            <h5>About</h5>
-            <h6>It all started back in 1997 at a summer camp where I coded my first HTML & CSS website. 
-            <h6>From there, I did absolutely nothing with web development or computer programming until December 2020...when I decided to go to Lambda School. </h6>
-            <h6>I guess you could say I've been training for this moment. </h6>
-        </div>
-        <div class="quote">
-            <h5>Quote</h5>
-            <h6 class="quote">When you get there, remember where you came from.</h6>
+
+        <div class="showcase_form card">
+            <h2>Request Services</h2>
+            <form>
+                <div class="form_control">
+                    <input type="text" name="name" id="" placeholder="Name" required>
+                </div>
+                <div class="form_control">
+                    <input type="text" name="company" id="" placeholder="Company Name" required>
+                </div>
+                <div class="form_control">
+                    <input type="email" name="email" id="" placeholder="Email" required>
+                </div>
+                <input type="submit" value="Send" class="btn btn_primary">
+            </form>
         </div>
     </section>
+
+    </div> <!-- Background Container-->
 
     <!-- Image -->
     <section class="image">
