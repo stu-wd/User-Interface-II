@@ -7,17 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=PT+Sans+Narrow&family=Poiret+One&display=swap" rel="stylesheet">
     <title>Stu Darsey</title>
+    <script src="https://kit.fontawesome.com/f4d058472f.js" crossorigin="anonymous"></script>
+    <link rel="javascript" href="js/main.js">
 </head>
 <body>
-    <div class="background_container"> <!-- Background Container-->
-
     <div class="container"> <!-- Container -->
-
     <!-- Header -->
     <header>
         <div class="socials">
-            <a href="#"><i class="fab fa-github fa-5x"></i></a>
-            <a href="#"><i class="fab fa-linkedin fa-5x"></i></a>
+            <a href="https://github.com/stu-wd?tab=repositories" target="_blank"><i class="fab fa-github fa-5x"></i></a>
+            <a href="https://www.linkedin.com/in/stuartdarsey229/" target="_blank"><i class="fab fa-linkedin fa-5x"></i></a>
         </div>
 
         <div class="nameplate">
@@ -29,7 +28,7 @@
     <!-- Nav Bar -->
     <nav>
         <a href="#">About</a>
-        <a href="#">Projects</a>
+        <a href="#projects_section">Projects</a>
         <a href="#">Hobbies</a>
         <a href="#">Contact</a>
     </nav>
@@ -44,7 +43,7 @@
 
         <div class="showcase">
             <div class="goals">
-                <h5>Goals</h5>
+                <h5>My Demands</h5>
                     <ul>
                         <li>Work from home</li>
                         <li>Land job with current company</li>
@@ -56,14 +55,14 @@
                 </h6>
             </div>
             <div class="bio">
-                <h5>Bio</h5>
+                <!-- <h5>Bio</h5> -->
                 <h6>It all started back in 1997 at a summer camp where I coded my first HTML & CSS website. 
                 <h6>From there, I did absolutely nothing with web development or computer programming until December 2020...when I decided to go to Lambda School. </h6>
                 <h6>I guess you could say I've been training for this moment. </h6>
             </div>
             <div class="quote">
-                <h5>Quote</h5>
-                <h6>When you get there, remember where you came from.</h6>
+                <!-- <h5>Quote</h5> -->
+                <h6><span class="drop_caps">W</span>hen you get there, remember where you came from.</h6>
             </div>
         </div>
 
@@ -84,35 +83,50 @@
         </div>
     </section>
 
-    </div> <!-- Background Container-->
-
     <!-- Image -->
     <section class="image">
-        <img src="img/hope_lake.JPG" alt="#">
+        <img src="img/hope_lake.JPG" alt="">
     </section>
 
     <!-- Projects -->
-    <section class="projects">
-        <div class="tab1 show">
-            <p class="tab1_name">HTML & CSS</p>
+
+    <section class="projects" id="projects_section">
+        <div class="tab_item" id="tab_1">
+            <i class="fab fa-html5 fa-5x"></i>
+            <i class="fab fa-css3-alt fa-5x"></i>
+                <div class="project_links">
+                    <ul>
+                        <li><a href="#">Learning HTML</a></li>
+                        <li><a href="#">CSS Crash Course</a></li>
+                        <li><a href="#">Copying a Website</a></li>
+                        <li><a href="#">Landing Page</a></li>
+                    </ul>
+                </div>
         </div>
-        <div class="tab2">
-            <p class="tab2_name">Javascript</p>
-        </div>
-        <div class="tab3">
-            <p class="tab3_name">Something Else</p>
+        <div class="tab_item" id="tab_2">
+            <i class="fab fa-js-square fa-5x"></i>
+                <div class="project_links">
+                    <ul>
+                        <li><a href="#">JS from Landing Page</a></li>
+                        <li><a href="#">First Chess Board</a></li>
+                    </ul>
+                </div>
         </div>
     </section>
 
-    <!-- Projects Content -->
-
+    <nav class="bottom_nav">
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Hobbies</a>
+        <a href="#">Contact</a>
+    </nav>
 
     <!-- Footer -->
     <footer>
         <h3>Copyright &copy; 2021</h3>
+        <h2>Don't take my stuff, or I'll send Carini after ya</h2>
     </footer>
 
-    </div> <!-- Container -->
-    <script src="https://kit.fontawesome.com/f4d058472f.js" crossorigin="anonymous"></script>
+    </div> <!--container-->
 </body>
 </html>
