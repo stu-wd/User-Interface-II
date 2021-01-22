@@ -676,9 +676,11 @@ h2 {
 }
 
 footer h3 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 footer h2 {
   font-size: 1.3rem;
 }
+
+/* Breakpoints */
