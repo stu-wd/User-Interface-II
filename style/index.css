@@ -526,9 +526,9 @@ nav a:hover {
   /* border: 3px solid white; */
   box-shadow: 12px 12px 2px 1px black;
   margin-right: 5%;
-  animation: fromRightCard;
+  animation: fadeInSlower;
   animation-timing-function: ease-in;
-  animation-duration: 10s;
+  animation-duration: 14s;
 }
 
 .form_control {
