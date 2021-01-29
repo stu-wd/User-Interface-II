@@ -209,7 +209,7 @@ div.container {
   }
 }
 
-@keyframes fromRight {
+/* @keyframes fromRight {
   0% {
     transform: translateX(150%);
   }
@@ -308,8 +308,7 @@ div.container {
 
   100% {
     opacity: 1;
-  }
-}
+  } */
 
 /* Background Color */
 
@@ -337,9 +336,16 @@ header {
   /* border: 1px springgreen solid; */
   margin: 0 5px;
   color: black;
-  animation: fromLeft;
+  /* animation: fromLeft;
   animation-duration: 2s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in; */
+}
+
+.socials i:hover {
+  transform: translateY(-10px);
+  transition: transform 1s ease;
+  border-bottom: 5px solid rgba(0, 0, 0, 1);
+  color: grey;
 }
 
 header h1 {
@@ -393,13 +399,16 @@ nav a:hover {
   animation: navExpand;
   animation-duration: 1s;
   animation-timing-function: ease-in;
-}
-
-nav a:hover {
   font-size: 1.8rem;
   border-radius: 20px;
   margin: 1%;
 }
+
+/* nav a:hover {
+  font-size: 1.8rem;
+  border-radius: 20px;
+  margin: 1%;
+} */
 
 /* Welcome Section */
 .welcome {
@@ -410,8 +419,8 @@ nav a:hover {
   padding: 1% 0;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 3.4rem;
-  animation: fadeInSlower;
-  animation-duration: 4s;
+  /* animation: fadeInSlower;
+  animation-duration: 4s; */
 }
 
 /* About Section */
@@ -526,9 +535,9 @@ nav a:hover {
   /* border: 3px solid white; */
   box-shadow: 12px 12px 2px 1px black;
   margin-right: 5%;
-  animation: fromRightCard;
+  animation: fadeInSlower;
   animation-timing-function: ease-in;
-  animation-duration: 10s;
+  animation-duration: 14s;
 }
 
 .form_control {
@@ -589,7 +598,7 @@ nav a:hover {
 .image img {
   width: 100%;
   height: auto;
-  animation: fillWithColor 20s;
+  animation: fillWithColor 10s;
 }
 
 /* Projects */
@@ -681,4 +690,65 @@ footer h3 {
 
 footer h2 {
   font-size: 1.3rem;
+}
+
+/* Breakpoints */
+
+@media (max-width: 1450px) {
+  .quote {
+    display: none;
+  }
+
+  .showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .showcase {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .goals {
+    display: none;
+  }
+
+  .personal {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    margin: 15px 0;
+  }
+
+  .projects {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .projects .tab_item {
+    display: block;
+    /* flex-flow: row;
+    justify-content: center; */
+    width: 100%;
+    text-align: center;
+  }
 }
